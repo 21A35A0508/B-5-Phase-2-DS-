@@ -1,0 +1,13 @@
+from queue import LifoQueue
+s=LifoQueue(maxsize=3)
+print(s.qsize())
+s.put('h')
+s.put('e')
+s.put('l')
+s.put('l')
+s.put('e')
+print(s.full())
+print(s.qsize())
+print(s.get())
+print(s.get())
+print(s.empty())
